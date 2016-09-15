@@ -1541,11 +1541,11 @@ background-image: url("images/mockup.png");
 	}
 
 	.home-main{
-
 		display: block;
 		max-height: 710px;
 		margin: 0 auto;
 		overflow: hidden;
+		min-height: 100%;
 	}
 
 	video{
