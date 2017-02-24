@@ -103,7 +103,7 @@ header{
   max-width: 570px;
   width: 90%;
   background: rgba(0, 66, 123, 0.95);
-  height: 70%;
+  min-height: 70%;
   margin-left: 5%;
   padding: 20px;
   box-sizing: border-box;
@@ -123,6 +123,17 @@ header{
   width: 92.5%;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.role{
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.82);
+  border-radius: 4px;
+  padding: 5px 7px;
+  color: #8a8a8a;
+  font-size: 12px;
+  margin-right: 5px;
+  margin-bottom: 10px;
 }
 
 .content-block{
@@ -237,29 +248,6 @@ header{
     background-color: #014683;
 }
 
-.hero-animation{
-  display: block;
-  width: 100%;
-  max-width: 875px;
-  height: auto;
-  margin: 0 auto 20px auto;
-}
-
-.sidebar-title{
-  color: #8a8a8a;
-  font-size: 25x;
-  font-weight: 500;
-}
-
-.sidebar-title::after{
-  content: ' ';
-  margin-top: 5px;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background-color: #005197;
-}
-
 .scrolling-screens{
 	background:#e1e4ea;
 	font-family: 'Raleway', sans-serif;
@@ -335,8 +323,8 @@ footer{
 
 @media only screen and (max-width: 1200px){
   .project-hero--aaq{
-    background-size: 757px;
-    background-position: 95% center;
+    background-size: 90%;
+    background-position: center;
   }
 }
 
@@ -453,4 +441,8 @@ footer{
 /*helper classes*/
 .fullwidth{
   width: 100%;
+}
+
+.white-text{
+  color: white;
 }
