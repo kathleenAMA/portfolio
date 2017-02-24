@@ -1,0 +1,346 @@
+body{
+  padding-top: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, a{
+  font-family: 'Cabin', sans-serif;
+}
+
+a{
+  color: #623372;
+  text-decoration: none;
+}
+
+p{
+  color: #6f6f6f;
+  font-size: 15px;
+  line-height: 21px;
+  margin-bottom: 10px
+}
+
+a:hover{
+  font-weight: 700;
+}
+
+header{
+  height: 52px;
+}
+
+.navigation-bar{
+  width: 100vw;
+  background: white;
+  overflow: hidden;
+  margin-bottom: 1em;
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  -webkit-box-shadow: 0px 2px 6px 1px rgba(0,0,0,0.07);
+  -moz-box-shadow: 0px 2px 6px 1px rgba(0,0,0,0.07);
+  box-shadow: 0px 2px 6px 1px rgba(0,0,0,0.07);
+}
+
+.nav-list{
+  height: 52px;
+  background: white;
+  margin: 0 10px 0 0;
+	padding: 0;
+  text-align: center;
+  display: block;
+}
+
+.nav-list__link{
+  display: inline-block;
+  margin: 0 12px;
+  padding: 6px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 38px;
+}
+
+.mobile-menu-icon{
+  display: none;
+}
+
+.side-bar{
+  max-width: 390px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.project-container{
+  width: calc(100% - 390px);
+  background: #f7f7f7;
+}
+
+.project-hero{
+  padding-top: 1px;
+  height: 520px;
+}
+
+.project-hero--aaq{
+  background: #00539b;
+  background: -moz-linear-gradient(top,  #00539b 0%, #004989 42%);
+  background: -webkit-linear-gradient(top,  #00539b 0%,#004989 42%);
+  background: linear-gradient(to bottom,  #00539b 0%,#004989 42%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00539b', endColorstr='#004989',GradientType=0 );
+}
+
+.project-logo{
+  width: 175px;
+  height: auto;
+  margin: 20px auto 0 auto;
+}
+
+.project-logo img{
+  width: 100%;
+}
+
+.project-content-container{
+  width: 92.5%;
+  margin: 0 auto;
+  margin-top: -435px;
+}
+
+.content-block{
+  padding: 30px 0;
+}
+
+.content-block--amablue{
+  padding: 30px 0;
+  background-color: #014683;
+}
+
+.content-block__title{
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  margin-bottom: 12px;
+  margin-left: 40px;
+  max-width: 465px;
+  font-weight: normal;
+}
+
+.content-block__title--amablue{
+  color: #014683;
+}
+
+.content-label{
+  text-transform: uppercase;
+  color: #b1b1b1;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+.content-label--vertical{
+  float: left;
+  text-transform: uppercase;
+  color: #b1b1b1;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transform: rotate(-90deg);
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+.content-image{
+  width: 550px;
+  float: right;
+  margin-left: 10px;
+}
+
+.floated-content{
+  width: auto;
+  overflow: auto;
+}
+
+.project-title{
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.color-block--ama-blue{
+  background: #014683;
+  padding: 20px;
+}
+
+.scroll-image{
+  margin-top: 10px;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.scroll-image img{
+  height: 550px;
+  width: auto;
+}
+
+.scroll-image::-webkit-scrollbar {
+    -webkit-appearance: none;
+    padding: 10px;
+    height: 6px;
+    background: #e0e0e0;
+}
+
+.scroll-image::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #014683;
+}
+
+.hero-animation{
+  display: block;
+  width: 100%;
+  max-width: 875px;
+  height: auto;
+  margin: 0 auto 20px auto;
+}
+
+.sidebar-title{
+  color: #8a8a8a;
+  font-size: 25x;
+  font-weight: 500;
+}
+
+.sidebar-title::after{
+  content: ' ';
+  margin-top: 5px;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #005197;
+}
+
+.scrolling-screens{
+	background:#e1e4ea;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	color: #636363;
+	font-size: 18px;
+}
+
+.scrolling-screen__slide {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: calc(50% - 198.5px) 70%;
+	background-size: auto 72%;
+	height: 768px;
+	padding-top: 100px;
+	width: 100%;
+}
+
+.scrolling-screens>div:not(.scrolling-screen__slide){
+
+}
+
+.scrolling-screens--insurance .scrolling-screen__slide:nth-of-type(2){
+  	background-image: url(../images/insurance-screen1.png);
+}
+
+.scrolling-screens--insurance .scrolling-screen__slide:nth-of-type(3){
+  	background-image: url(../images/insurance-screen2.png);
+}
+.scrolling-screens--insurance .scrolling-screen__slide:nth-of-type(4){
+  	background-image: url(../images/insurance-screen3.png);
+}
+.scrolling-screens--insurance .scrolling-screen__slide:nth-of-type(5){
+  	background-image: url(../images/insurance-screen4.png);
+}
+
+#fixme {
+  margin-top: 50px;
+  padding: 30px 20px;
+  width: 933px;
+  background: #f7f7f7;
+  text-align: center;
+}
+.stick {
+    position:fixed;
+    top:0px;
+}
+
+@media only screen and (max-width: 787px){
+  .nav-list{
+    margin-top: 57px;
+    height: 0;
+    float: none;
+    width: 100%;
+  }
+
+  .nav-list.active{
+    height: 150px;
+  }
+
+  .nav-list__link{
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .mobile-menu-icon{
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 16px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0;
+  }
+
+  .mobile-menu-icon span,
+  .mobile-menu-icon span:before,
+  .mobile-menu-icon span:after{
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+    border-radius: 1px;
+    height: 3px;
+    width: 33px;
+    background: #623372;
+    position: absolute;
+    display: block;
+    content: '';
+  }
+
+  .mobile-menu-icon span:before{
+    top: -10px;
+  }
+  .mobile-menu-icon span:after{
+    bottom: -10px;
+  }
+
+  .mobile-menu-icon.active span{
+    background-color: transparent;
+  }
+
+  .mobile-menu-icon.active span:before,
+  .mobile-menu-icon.active span:after{
+    top: 0;
+  }
+
+  .mobile-menu-icon.active span:before{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+  }
+
+  .mobile-menu-icon.active span:after{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+  }
+}
