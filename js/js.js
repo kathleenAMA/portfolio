@@ -11,17 +11,16 @@
               if ($window.scrollTop() > pos && $window.scrollTop() < pos2) {
                   $this.css({
                       position: 'fixed',
-                      top: 0
+                      bottom: 0,
+                      left: 0
                   });
               } else if ($window.scrollTop() < pos) {
                   $this.css({
                       position: 'relative',
-                      top: 0
                   });
               } else if ($window.scrollTop() > pos2) {
                 $this.css({
                     position: 'relative',
-                    top: 50
                 });
               }
 
@@ -29,5 +28,5 @@
       };
 
 
-      $('#fixme').followTo(1800, 5500);
+      $('#fixme').followTo(1860, 5250);
   });
