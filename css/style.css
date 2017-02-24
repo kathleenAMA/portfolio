@@ -79,21 +79,33 @@ header{
 }
 
 .project-container{
-  width: calc(100% - 390px);
+  width: 100%;
   background: #f7f7f7;
 }
 
 .project-hero{
   padding-top: 1px;
-  height: 520px;
 }
 
 .project-hero--aaq{
-  background: #00539b;
-  background: -moz-linear-gradient(top,  #00539b 0%, #004989 42%);
-  background: -webkit-linear-gradient(top,  #00539b 0%,#004989 42%);
-  background: linear-gradient(to bottom,  #00539b 0%,#004989 42%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00539b', endColorstr='#004989',GradientType=0 );
+  background-image: url(../images/insurance-hero-bg.png);
+  background-size: 1070px;
+  background-repeat: no-repeat;
+  background-position: 85% center;
+  background-color: #00539b;
+}
+
+.hero-content{
+  padding: 70px 0;
+}
+
+.project-description{
+  width: 560px;
+  background: rgba(0, 66, 123, 0.95);
+  height: 70%;
+  margin-left: 5%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .project-logo{
@@ -109,7 +121,6 @@ header{
 .project-content-container{
   width: 92.5%;
   margin: 0 auto;
-  margin-top: -435px;
 }
 
 .content-block{
