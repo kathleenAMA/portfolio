@@ -88,8 +88,8 @@ header{
 }
 
 .project-hero--aaq{
-  background-image: url(../images/insurance-hero-bg.png);
-  background-size: 1070px;
+  background-image: url(../images/ama-hero-animation.gif);
+  background-size: auto 85%;
   background-repeat: no-repeat;
   background-position: 85% center;
   background-color: #00539b;
@@ -100,7 +100,8 @@ header{
 }
 
 .project-description{
-  width: 560px;
+  max-width: 570px;
+  width: 90%;
   background: rgba(0, 66, 123, 0.95);
   height: 70%;
   margin-left: 5%;
@@ -120,11 +121,13 @@ header{
 
 .project-content-container{
   width: 92.5%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .content-block{
   padding: 30px 0;
+  position: relative;
 }
 
 .content-block--amablue{
@@ -138,13 +141,16 @@ header{
   letter-spacing: 1.5px;
   line-height: 30px;
   margin-bottom: 12px;
-  margin-left: 40px;
   max-width: 465px;
   font-weight: normal;
 }
 
 .content-block__title--amablue{
   color: #014683;
+}
+
+.content-container--label{
+  margin-left: 40px;
 }
 
 .content-label{
@@ -158,34 +164,49 @@ header{
 }
 
 .content-label--vertical{
-  float: left;
   text-transform: uppercase;
   color: #b1b1b1;
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 700;
-  transform: rotate(-90deg);
-  margin-top: 10px;
-  margin-left: -10px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -ms-transform-origin: left top 0;
+  -webkit-transform-origin: left top 0;
+  transform-origin: left top 0;
+  position: absolute;
+  top: 36px;
+  left: 28px;
+  text-align: left;
 }
 
 .content-image{
-  width: 550px;
-  float: right;
-  margin-left: 10px;
+  width: 49%;
+  max-width: 800px;
+  float: left;
+  margin-left: 2%;
 }
 
 .floated-content{
-  width: auto;
+  width: 49%;
+  float: left;
   overflow: auto;
 }
 
 .project-title{
-  font-size: 30px;
+  font-size: 40px;
   color: white;
-  font-weight: 500;
-  text-align: center;
   margin-bottom: 20px;
+  width: 90%;
+  font-weight: 700;
+}
+
+.header-label{
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .color-block--ama-blue{
@@ -247,14 +268,14 @@ header{
 	font-size: 18px;
 }
 
-.scrolling-screen__slide {
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: calc(50% - 198.5px) 70%;
-	background-size: auto 72%;
-	height: 768px;
-	padding-top: 100px;
-	width: 100%;
+.scrolling-screen__slide{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: auto 60%;
+  height: 678px;
+  padding-top: 50px;
+  width: 100%;
 }
 
 .scrolling-screens>div:not(.scrolling-screen__slide){
@@ -275,19 +296,90 @@ header{
   	background-image: url(../images/insurance-screen4.png);
 }
 
+.mobile-mocks-container{
+  max-width: 850px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.mobile-mocks-container img{
+  max-width: 30%;
+  height: auto;
+  float: left;
+}
+
+.mobile-mocks-container img:nth-child(2){
+  margin: 0 5%;
+}
+
 #fixme {
   margin-top: 50px;
   padding: 30px 20px;
-  width: 933px;
+  width: 100%;
   background: #f7f7f7;
   text-align: center;
+  box-sizing: border-box;
 }
 .stick {
     position:fixed;
     top:0px;
 }
 
-@media only screen and (max-width: 787px){
+footer{
+  background-color: #e4e4e4;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  color: #ababab;
+}
+
+@media only screen and (max-width: 1200px){
+  .project-hero--aaq{
+    background-size: 757px;
+    background-position: 95% center;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .content-image{
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .floated-content{
+    width: 100%;
+  }
+
+  .scrolling-screen__slide{
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: center;
+    background-size: 95%;
+    height: 458px;
+    padding-top: 0;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+  .mobile-mocks-container img{
+    float: none;
+    max-width: 210px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .mobile-mocks-container img:nth-child(2){
+    margin: 0 auto;
+  }
+
+  .scrolling-screen__slide{
+    height: 200px;
+  }
+
+  /*mobile nav*/
   .nav-list{
     margin-top: 57px;
     height: 0;
@@ -354,4 +446,11 @@ header{
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
   }
+}
+
+
+
+/*helper classes*/
+.fullwidth{
+  width: 100%;
 }
