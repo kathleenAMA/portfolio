@@ -11,19 +11,17 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -51,32 +49,16 @@ table {
     line-height: 0;
     height: 0;
 }
- 
+
 .clearfix {
     display: inline-block;
 }
- 
-html[xmlns] .clearfix {
-    display: block;
-}
- 
-* html .clearfix {
-    height: 1%;
-}
+
+
 
 
 /*essentials*/
 
-body, html {
-	position: absolute;
-	width:100%;
-	height:100%;
-	font-size: 1.25em; 			
-	line-height: 1.5em;			
-	background:#f6f6f3;
-	color: #847477;
-
-}
 html * {
 	transition:all 200ms ease;
 	-moz-transition: all 200ms ease;
@@ -90,193 +72,22 @@ html * {
 	-o-transition: all 200ms ease;
 }
 
-a:link {
-	color: #403537;
-	text-decoration: none;
-	display:block;
-}
-a:visited{
-	color:#23070b;
-	text-decoration:none;
-}
-a:hover{
-	color:#f05770;
-	text-decoration:none;
-}
-*:focus  {  
-  outline: none;  
-}  
 :-moz-any-link:focus {
   outline: none;
 }
 #wrapper {
 	position:relative;
-	padding-top: 1px;	
+	padding-top: 1px;
 	margin-top: -1px;
 }
 
 
-#mainmenu {
-	text-align:center;
-	width: 100%;
-	background: rgba(0,0,0,0.5);
-	/*padding-top: 1px;*/
-}
-
-#mainmenu ul{
-	margin-top:.17em;
-
-}
-
-#mainmenu li {
-    margin: 0px;
-	width:96%;
-	padding: 4%;
-	position:relative;
-	text-align:left;
-}
-
-#mainmenu li:hover{
-
-}
-#mainmenu a {
-	font-family: 'nexa_lightregular';
-	text-transform:uppercase;	
-	font-size:16px;
-	line-height:9px;
-	color: #fff;
-	letter-spacing: 1;
 
 
-}
-
-/*LOGO*/
-
-#top-logo {
-width: 40px;
-height: 47px;
-display: inline-block;
-float: left;
-background-image: url(images/newlogo.png);
-background-position: center center;
-background-size: 54%;
-background-repeat: no-repeat;
-padding: 5px;
-}
-
-/*responsive navigation*/
-
-.pattern {
-	margin-bottom: 1em;
-	overflow: hidden;
-	background: rgba(211,22,67,0.7);
-
-	position: fixed;
-	width: 100%;
-	z-index: 100000;
-	-webkit-transition: all 1s ease;  
-	-moz-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-
-a.menu-link {
-	float:right;
-	display:block;
-	padding:1em;
-	font-family: 'nexa_lightregular';
-	text-transform:uppercase;
-	letter-spacing: 1px;	
-	font-size:16px;
-	line-height:10px;
-	min-height: 10px;
-	color: #fff;
-	font-weight: lighter;
-	background-color: transparent;
-}
-
-/* Hide */
-nav[role=navigation] {
-	max-height:0;
-}
-/* Show */
-nav[role=navigation].active {
-	max-height:15em;
-}
-/* Vertical Menu */
-nav[role=navigation] {
-	clear: both;
-	-webkit-transition: all 0.3s ease-out;  
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
-}
-
-nav[role=navigation] ul {
-	margin: 0;
-	padding: 0;
-
-}
-nav[role=navigation] li a {
-	display: block;
 
 
-}
-
-/*Responsive nav toggle*/
-
-#nav-toggle {
-position: absolute;
-right: 14px;
-top: 16px;
-}
-
-#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 3px;
-  width: 33px;
-  background: white;
-  position: absolute;
-  display: block;
-  content: '';
-}
-#nav-toggle span:before {
-  top: -10px; 
-}
-#nav-toggle span:after {
-  bottom: -10px;
-}
-
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  transition: all 500ms ease-in-out;
-}
-#nav-toggle.active span {
-  background-color: transparent;
-}
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}
-#nav-toggle.active span:before {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-}
-#nav-toggle.active span:after {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-}
 
 
-/*fixed nav spacer*/
-
-#spacer{
-	margin: 80px auto 0 auto;
-}
 
 /*=========PROCESS SLIDES===========*/
 .slide{
@@ -309,8 +120,6 @@ top: 16px;
 
 
 .copy{
-
-	font-family: 'nexa_lightregular';
 	font-size: 16px;
 	line-height: 20px;
 	width: 100%;
@@ -341,7 +150,7 @@ top: 16px;
 
 
 /******************************
- SLIDE 3 
+ SLIDE 3
 *******************************/
 #slide3{
 
@@ -349,7 +158,7 @@ top: 16px;
 	margin-top: 100%;
 }
 /******************************
- SLIDE 4 
+ SLIDE 4
 *******************************/
 
 #slide4{
@@ -405,7 +214,6 @@ top: 16px;
 	text-align: center;
 	text-transform: uppercase;
 	vertical-align: center;
-	font-family: 'nexa_lightregular';
 	color: #ffffff;
 }
 
@@ -427,7 +235,6 @@ top: 16px;
 	float: none;
 	padding: 110px 5%;
 	background-color: rgba(246,246,243,0.45);
-	font-family: 'nexa_lightregular';
 	font-size: 15.5px;
 	line-height: 19px;
 	color: #64595B;
@@ -447,7 +254,6 @@ top: 16px;
 }
 
 .about-name{
-	font-family: 'nexa_lightregular';
 	font-size: 27px;
 	line-height: 29px;
 	color: rgba(177, 44, 75, 0.9);
@@ -465,7 +271,6 @@ top: 16px;
 	text-align: center;
 	font-size: 30px;
 	font-weight: normal;
-	font-family: 'nexa_lightregular';
 	text-transform: uppercase;
 	padding: 20px;
 }
@@ -807,7 +612,7 @@ div#signority-nav{
 }
 
 .screen.clearfix.first-screen {
-	
+
 	width: 94%;
 	margin: 3%;
 }
@@ -824,31 +629,22 @@ div#signority-nav{
 
 #idose-home{
 	background-image: url(images/idose-home.png);
-	background-position: center center;
 }
 
 #idose-input{
 	background-image: url(images/idose-input.png);
-	background-position: center center;
 }
 
 #idose-dose{
 	background-image: url(images/idose-dose.png);
-	background-position: center center;
 }
 
 #idose-fav{
 	background-image: url(images/idose-fav.png);
-	background-position: center center;
 }
 
 #idose-help{
 	background-image: url(images/idose-help.png);
-	background-position: center center;
-}
-
-.idose-slider{
-	background-size: auto;
 }
 
 #idose-colour{
@@ -1023,12 +819,6 @@ div#signority-nav{
 	text-align: center;
 }
 
-.project-logo{
-	margin: 20px auto;
-	display: block;
-	border-bottom: 1px solid white;
-}
-
 .project-summary{
 
 	margin: 5px auto;
@@ -1083,8 +873,8 @@ div#signority-nav{
 .group {
     zoom:1; /* For IE 6/7 */
 }
-                                               
-					
+
+
 /*  GRID OF TWO  */
 .span_2_of_2 {
 	width: 100%;
@@ -1132,47 +922,41 @@ div#signority-nav{
 #block6{
 
 	background: url(images/signority-tile.jpg);
-	background-size: contain;	
+	background-size: contain;
 }
 
 #block7{
 
 	background: url(images/decath-tile.jpg);
-	background-size: contain;	
+	background-size: contain;
 }
 
 #block8{
 
 	background: url(images/idose-tile.jpg);
-	background-size: contain;	
+	background-size: contain;
 }
 
 #block9{
 
 	background: url(images/gameface-tile.jpg);
-	background-size: contain;	
+	background-size: contain;
 }
 #block10{
 
 	background: url(images/cheo-tile.jpg);
-	background-size: contain;	
+	background-size: contain;
 }
 #block11{
 
 	background: url(images/ot-tile.jpg);
-	background-size: contain;	
+	background-size: contain;
 }
 
 
 /*process styles*/
 
-#traxion-slides {
-	background:#f6f6f3;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
-	color: #636363;
-	font-size: 18px;
-}
+
 
 .step-summary-container {
 	background:rgba(248, 248, 248, 0.9);
@@ -1196,58 +980,6 @@ div#signority-nav{
 	line-height: 22px;
 }
 
-#traxion-slides>div {
-	width: 100%;
-	overflow: hidden;
-
-	background-repeat: no-repeat;
-	height: 768px;
-	padding-top: 0px;
-	background-size: 55%;
-}
-
-.idose-slider{
-	background-size: auto 72% !important;
-	background-color: #ffffff;
-	background-size: auto 90%;
-	background-color: #ffffff;
-	height: 630px !important;
-	margin-bottom: -80px;
-
-}
-
-.fixed-slider>div:not(.row) {
-background-attachment: inherit;
-background-position: center bottom;
-width: 100%;
-overflow: hidden;
-}
-
-
-#traxion-sketch {
-background-image: url("images/research.png");
-}
-
-#traxion-wire {
-background-image: url("images/target.png");
-}
-
-#traxion-brainstorm{
-	background-image: url("images/brainstorm.png");
-}
-
-#traxion-final {
-background-image: url("images/mockup.png");
-}
-
-#traxion-prototype{
-	background-image: url("images/prototype.png");
-}
-
-#traxion-dev{
-	background-image: url("images/dev.png");
-}
-
 .process-heading{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
@@ -1259,6 +991,8 @@ background-image: url("images/mockup.png");
 	text-align: center;
 }
 
+
+
 .process-subheading{
 	color: #F3F3F3;
 	font-size: 20px;
@@ -1269,7 +1003,7 @@ background-image: url("images/mockup.png");
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
 @media only screen and (max-width: 787px) {
-	
+
 	.traxion-slide{
 		width: 100% !important;
 		overflow: hidden !important;
@@ -1282,7 +1016,7 @@ background-image: url("images/mockup.png");
 		background-position-x: 50% !important;
 		background-position-y: 100% !important;
 
-	
+
 	}
 	#container1 {
 		margin-top: 0px;
@@ -1305,7 +1039,7 @@ background-image: url("images/mockup.png");
 
 
 @media only screen and (max-width: 680px) {
-	
+
 	.traxion-slide{
 		width: 100% !important;
 		overflow: hidden !important;
@@ -1317,7 +1051,7 @@ background-image: url("images/mockup.png");
 		background-position: inherit !important;
 		background-position-x: 50% !important;
 		background-position-y: 100% !important;
-	
+
 	}
 
 	div#traxion-wire, #traxion-prototype {
@@ -1327,7 +1061,7 @@ background-image: url("images/mockup.png");
 	#container1 {
 		margin-top: 0px;
 	}
-	
+
 	#decath-supporting-image{
 		background-image: url("images/decath-supporting.png");
 		height: 70%;
@@ -1338,7 +1072,7 @@ background-image: url("images/mockup.png");
 		background:url(images/decath-bg.jpg);
 		background-size: cover;
 		overflow: hidden;
-	
+
 	}
 	.step-summary-container {
 		background: rgba(248, 248, 248, 0.9);
@@ -1387,7 +1121,7 @@ background-image: url("images/mockup.png");
 
 @media only screen and (max-width: 520px) {
 	.span_2_of_2 {
-		width: 100%; 
+		width: 100%;
 	}
 	.span_1_of_2 {
 		width: 50%;
@@ -1440,7 +1174,7 @@ background-image: url("images/mockup.png");
 		margin: 0 0 0 -0.25em;
 		border: 0;
 	}
-/* Horizontal Navigation */	
+/* Horizontal Navigation */
 	nav[role=navigation]  li {
 		display: inline-block;
 		margin: 0 0.25em;
@@ -1449,52 +1183,13 @@ background-image: url("images/mockup.png");
 		border: 0;
 	}
 
-	#mainmenu{
-		display: inline;
-	}
-
 	#logo-wrapper{
 		max-width:765px;
 		margin: 0 auto;
 	}
 
-	#mainmenu li {
-	    margin: 5px;
-	    margin-bottom: .45em;
-		width:85px;
-		padding: 6px;
-		position:relative;
-		text-align:center;
-		background: transparent;
-
-	}
-
-	#mainmenu ul {
-		float: right;
-		margin-top: .23em;
-
-	}
-
-
-	.pattern{
-		border-bottom:0px solid #f05770;
-	}
 
 		/*process styles*/
-	#traxion-slides>div {
-		width: 100%;
-		overflow: hidden;
-
-		background-repeat: no-repeat;
-		height: 768px;
-		padding-top: 298px;
-		background-size: auto;
-	}
-
-	.idose-slider{
-	background-size: auto;
-	}
-
 
 	.step-summary {
 		min-width: 280px;
@@ -1557,7 +1252,7 @@ background-image: url("images/mockup.png");
 	}
 
 	.home-main{
-		
+
 		display: block;
 		max-height: 710px;
 		margin: 0 auto;
@@ -1606,7 +1301,6 @@ background-image: url("images/mockup.png");
 		margin-left: 2%;
 		margin-right: 2%;
 		float: left;
-		font-family: 'Raleway', sans-serif;
 		font-weight: 300;
 		color: #fff;
 		font-size: 18px;
@@ -1646,7 +1340,7 @@ background-image: url("images/mockup.png");
 		width: 39%;
 		margin: 0;
 		margin-top: 19px;
-		
+
 	}
 
 	.cheo-screen1{
@@ -1658,7 +1352,6 @@ background-image: url("images/mockup.png");
 	}
 
 	.process-heading{
-		font-family: 'Raleway', sans-serif;
 		font-weight: 300;
 		color: #464646;
 		font-size: 32px;
@@ -1677,7 +1370,7 @@ background-image: url("images/mockup.png");
 		background-image: url("images/gameface-supporting.png");
 		height: 78%;
 		margin-top: 30px;
-	
+
 	}
 
 	.idose-screen{
@@ -1757,13 +1450,6 @@ background-image: url("images/mockup.png");
 		background-size: cover;
 		overflow: hidden
 	}
-	.fixed-slider>div:not(.row) {
-		background-attachment: fixed;
-		background-position: center bottom;
-		width: 100%;
-		overflow: hidden;
-
-	}
 
 	.home-icon {
 		width: 33.33%;
@@ -1772,7 +1458,7 @@ background-image: url("images/mockup.png");
 		/* display: inline-block; */
 		float: left;
 	}
-	
+
 
 }
 
@@ -1793,4 +1479,3 @@ video{
 	}
 
 }
-
