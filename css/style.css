@@ -527,6 +527,10 @@ header {
   .content-block--heavyliftflow {
     background-color: #232323;
     background-image: url(../images/heavylift-flow.png); }
+  .content-block--notificationui {
+    background-color: #e1e4ea;
+    background-image: url(../images/notification-ui.gif);
+    background-position: left center; }
   .content-block__full-width-img {
     width: 90%;
     margin: 30px auto 0 auto;
@@ -653,6 +657,22 @@ header {
 .scrolling-screens--insurance .scrolling-screen__slide:nth-of-type(5) {
   background-image: url(../images/insurance-screen4.png); }
 
+.scrolling-screens--notification .scrolling-screen__slide:nth-of-type(2) {
+  background-image: url(../images/notification-admin-screen1.jpg); }
+
+.scrolling-screens--notification .scrolling-screen__slide {
+  background-position: bottom center;
+  background-size: auto 90%; }
+
+.scrolling-screens--notification .scrolling-screen__slide:nth-of-type(3) {
+  background-image: url(../images/notification-admin-screen2.jpg); }
+
+.scrolling-screens--notification .scrolling-screen__slide:nth-of-type(4) {
+  background-image: url(../images/notification-admin-screen3.jpg); }
+
+.scrolling-screens--notification .scrolling-screen__slide:nth-of-type(5) {
+  background-image: url(../images/notification-admin-screen4.jpg); }
+
 .mobile-screens--heavylift {
   background-color: #232323;
   background-image: url(../images/heavylift-mobile-screens.png);
@@ -735,6 +755,25 @@ header {
     .process__step-content p {
       font-size: 20px;
       line-height: 30px; }
+
+.thumbnail-screen {
+  width: 30%;
+  color: white;
+  float: left; }
+  .thumbnail-screen:nth-of-type(2) {
+    margin: 0 2.5%; }
+  .thumbnail-screen img {
+    width: 90%;
+    display: block;
+    margin: 0 auto; }
+  .thumbnail-screen__title {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  .thumbnail-screen__caption {
+    width: 90%;
+    margin: 10px auto 0 auto; }
 
 .pre-footer {
   padding: 30px 2.5%;
@@ -882,6 +921,9 @@ footer {
   .scrolling-screen__slide {
     height: 320px; }
 
+  .scrolling-screens--notification .scrolling-screen__slide {
+    height: 470px; }
+
   .content-block--backgroundimage {
     padding: 200px 0; }
 
@@ -962,6 +1004,9 @@ footer {
 
   .scrolling-screen__slide {
     height: 260px; }
+
+  .scrolling-screens--notification .scrolling-screen__slide {
+    height: 470px; }
 
   .content-block--backgroundimage {
     padding: 150px 0; }
