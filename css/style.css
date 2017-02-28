@@ -183,7 +183,20 @@ body {
   padding-top: 1px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  image-rendering: optimizeSpeed;
+  /*                     */
+  image-rendering: -moz-crisp-edges;
+  /* Firefox             */
+  image-rendering: -o-crisp-edges;
+  /* Opera               */
+  image-rendering: -webkit-optimize-contrast;
+  /* Chrome (and Safari) */
+  image-rendering: optimize-contrast;
+  /* CSS3 Proposed       */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE8+                */ }
 
 body, a {
   font-family: "Cabin", sans-serif; }
@@ -364,13 +377,32 @@ header {
     height: 50px;
     background: blue; }
 
-.project-tile, .project-tile--ama-insurance, .project-tile--ama-notification, .project-tile--heavylift {
+.project-tile, .project-tile--thumbnail, .project-tile--ama-insurance, .project-tile--ama-notification, .project-tile--solar-decathlon, .project-tile--heavylift {
   width: 100%;
   background-size: cover;
   margin-top: 20px;
   position: relative;
   color: white;
   overflow: hidden; }
+  .project-tile--thumbnail {
+    width: 30.33%;
+    margin: 20px 1.5%;
+    height: 220px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #623372; }
+    .project-tile--thumbnail .project-tile__arrow, .project-tile--thumbnail .project-tile__arrow--left {
+      left: 0;
+      top: 0;
+      position: absolute; }
+    .project-tile--thumbnail .project-tile__button {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 130px; }
+    .project-tile--thumbnail:nth-of-type(2) {
+      margin: 20px 0; }
   .project-tile--ama-insurance {
     background-position: center center;
     background-image: url(../images/project-tile-ama-insurance-bg.jpg); }
@@ -381,6 +413,11 @@ header {
     background-image: url(../images/project-tile-ama-notification-bg.jpg); }
     .project-tile--ama-notification .project-tile__content, .project-tile--ama-notification .project-tile__content--left {
       background-color: rgba(164, 165, 171, 0.84); }
+  .project-tile--solar-decathlon {
+    background-position: center center;
+    background-image: url(../images/project-tile-decath-bg.jpg); }
+    .project-tile--solar-decathlon .project-tile__content, .project-tile--solar-decathlon .project-tile__content--left {
+      background-color: rgba(27, 122, 132, 0.82); }
   .project-tile--heavylift {
     background-position: center center;
     background-image: url(../images/project-tile-heavylift-bg.jpg); }
@@ -530,6 +567,16 @@ header {
   .content-block--heavyliftflow {
     background-color: #232323;
     background-image: url(../images/heavylift-flow.png); }
+  .content-block--notificationui {
+    background-color: #e1e4ea;
+    background-image: url(../images/notification-ui.gif);
+    background-position: left center; }
+  .content-block--notification-admin img {
+    width: 90%;
+    max-width: 940px;
+    height: auto;
+    margin: 10px auto 0 auto;
+    display: block; }
   .content-block__full-width-img {
     width: 90%;
     margin: 30px auto 0 auto;
@@ -656,6 +703,22 @@ header {
 .scrolling-screens--insurance .scrolling-screen__slide:nth-of-type(5) {
   background-image: url(../images/insurance-screen4.png); }
 
+.scrolling-screens--notification .scrolling-screen__slide:nth-of-type(2) {
+  background-image: url(../images/notification-admin-screen1.jpg); }
+
+.scrolling-screens--notification .scrolling-screen__slide {
+  background-position: bottom center;
+  background-size: auto 90%; }
+
+.scrolling-screens--notification .scrolling-screen__slide:nth-of-type(3) {
+  background-image: url(../images/notification-admin-screen2.jpg); }
+
+.scrolling-screens--notification .scrolling-screen__slide:nth-of-type(4) {
+  background-image: url(../images/notification-admin-screen3.jpg); }
+
+.scrolling-screens--notification .scrolling-screen__slide:nth-of-type(5) {
+  background-image: url(../images/notification-admin-screen4.jpg); }
+
 .mobile-screens--heavylift {
   background-color: #232323;
   background-image: url(../images/heavylift-mobile-screens.png);
@@ -738,6 +801,25 @@ header {
     .process__step-content p {
       font-size: 20px;
       line-height: 30px; }
+
+.thumbnail-screen {
+  width: 30%;
+  color: white;
+  float: left; }
+  .thumbnail-screen:nth-of-type(2) {
+    margin: 0 2.5%; }
+  .thumbnail-screen img {
+    width: 90%;
+    display: block;
+    margin: 0 auto; }
+  .thumbnail-screen__title {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  .thumbnail-screen__caption {
+    width: 90%;
+    margin: 10px auto 0 auto; }
 
 .pre-footer {
   padding: 30px 2.5%;
@@ -859,6 +941,9 @@ footer {
     width: 70%;
     padding: 80px 20px 160px 20px; }
 
+  .project-tile--thumbnail {
+    width: 100%; }
+
   .mobile-screens--heavylift {
     background-size: 120%;
     padding: 200px 0; } }
@@ -884,6 +969,9 @@ footer {
 
   .scrolling-screen__slide {
     height: 320px; }
+
+  .scrolling-screens--notification .scrolling-screen__slide {
+    height: 470px; }
 
   .content-block--backgroundimage {
     padding: 200px 0; }
@@ -965,6 +1053,9 @@ footer {
 
   .scrolling-screen__slide {
     height: 260px; }
+
+  .scrolling-screens--notification .scrolling-screen__slide {
+    height: 470px; }
 
   .content-block--backgroundimage {
     padding: 150px 0; }
