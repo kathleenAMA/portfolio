@@ -21,28 +21,23 @@
 	  		<a href="#" class="mobile-menu-icon">
 					<span></span>
 				</a>
-	    	<ul class="nav-list clearfix">
-					<li class="nav-list__link">
-						<a href="about.html" data-title="about">
-							<img src="images/logo.gif" class="logo">
-						</a>
+				<ul class="nav-list clearfix">
+	      	<li class="nav-list__link">
+						<a href="index.html#about" data-title="about">About</a>
 					</li>
 	      	<li class="nav-list__link">
-						<a href="about.html" data-title="about">About</a>
+						<a href="index.html#work" data-title="work">Projects</a>
 					</li>
 	      	<li class="nav-list__link">
-						<a href="portfolio.html" data-title="work">Projects</a>
-					</li>
-	      	<li class="nav-list__link">
-						<a href="#contact" data-title="contact">Resume</a>
+						<a href="resume.html" data-title="contact">Resume</a>
 					</li>
 					<li class="nav-list__link">
-						<a href="#contact" data-title="contact">Contact Me</a>
+						<a href="index.html#contact" data-title="contact">Contact Me</a>
 					</li>
 	      </ul>
 			</div>
 	  </header>
-		<section class="page home-page">
+		<section class="page home-page" id="about">
 			<div class="home-hero clearfix">
 			  <div class="home-hero-content">
 					<div class="home-page__title">
@@ -51,13 +46,14 @@
 					</div>
 					<section class="about-me">
 						<p>I am an adventure seeker. I like challenges and situations that get my adrenaline pumping. I believe with the right research and team work, there is no problem that does not have a solution.</p>
-						<p>I began designing user experiences four years ago, and let me tell ya, it was love at first site (pun intented, ah yeah).
-							I have found great passion in trying to create the best online experiences for people, with some of the most passionate people I’ve ever met.</p>
-						<div class="home-icon-container clearfix">
+						<p>I began designing user experiences four years ago, and let me tell ya, it was love at first site (pun intended, ah yeah).
+							I have found great satisfaction in creating the best product experiences for people, with some of the most passionate people I’ve ever met.</p>
+						<p>When I'm not creating something for the web, you can find me hiking, powerlifting, or watching The Office for the eighth time with my cat.</p>
+					<!--	<div class="home-icon-container clearfix">
 							<span class="home-icon home-icon--adventure icon-binoculars"></span>
 							<span class="home-icon icon-teacup"></span>
 							<span class="home-icon icon-ux"></span>
-						</div>
+						</div>-->
 						<a href="#work">Check out my work</a>
 					</section>
 				</div>
@@ -65,7 +61,7 @@
 			<div class="content-container" id="work">
 				<div class="page-title">
 					<h2>My Work</h2>
-					<span>Checkout some recent projects I’ve worked on</span>
+					<span>Check out some recent projects I’ve worked on</span>
 				</div>
 				<section class="project-tile project-tile--ama-insurance clearfix">
 					<div class="project-tile__content">
@@ -76,7 +72,7 @@
 							Auto insurance Quote Tool
 						</h3>
 						<div class="project-tile__roles">
-							UX design | protyping | Front-end Dev
+							UX design | Prototyping | Front-end Dev
 						</div>
 						<a class="project-tile__button" href="auto-insurance.html">
 							View Case Study
@@ -92,7 +88,7 @@
 							heavylift Cranes Website Design
 						</h3>
 						<div class="project-tile__roles">
-							UX design | protyping | Front-end Dev
+							Information Architecture	|	 User Research  |	 UX Design	|	Site Development
 						</div>
 						<a class="project-tile__button" href="heavylift.html">
 							View Case Study
@@ -110,7 +106,7 @@
 						<div class="project-tile__roles">
 							Concept | Strategy | UX Design
 						</div>
-						<a class="project-tile__button" href="auto-insurance.html">
+						<a class="project-tile__button" href="notification-centre.html">
 							View Case Study
 						</a>
 					</div>
@@ -126,38 +122,53 @@
 						<div class="project-tile__roles">
 							Research	| UX design | Print
 						</div>
-						<a class="project-tile__button" href="heavylift.html">
+						<a class="project-tile__button" href="solar-decathlon.html">
 							View Case Study
 						</a>
 					</div>
 				</section>
-				<section class="project-tile--thumbnail">
-					<a class="project-tile__button" href="#">
-						View On Behance
-					</a>
-					<svg class="project-tile__arrow" height="100%" preserveAspectRatio="none" viewBox="0 0 30.5 14" width="100%">
-						<path d="M0 14 L20.5 14 L0 0" fill="rgba(66, 35, 76, 0.80)"></path>
-					</svg>
+				<section class="project-tile--thumbnail cronometer-thumbnail">
+					<div class="project-tile__content">
+						<h3 class="project-tile__title">
+							Cronometer Promo Landing Page
+						</h3>
+						<a class="project-tile__button" target="_blank" href="https://www.behance.net/gallery/49439319/Cronometer-Landing-Page">
+							View On Behance
+						</a>
+						<svg class="project-tile__arrow" height="100%" preserveAspectRatio="none" viewBox="0 0 30.5 14" width="100%">
+							<path d="M0 14 L20.5 14 L0 0" fill="rgba(51, 51, 51, 0.78)"></path>
+						</svg>
+					</div>
 				</section>
-				<section class="project-tile--thumbnail">
-					<a class="project-tile__button" href="#">
-						View On Behance
-					</a>
-					<svg class="project-tile__arrow" height="100%" preserveAspectRatio="none" viewBox="0 0 30.5 14" width="100%">
-						<path d="M0 14 L20.5 14 L0 0" fill="rgba(66, 35, 76, 0.80)"></path>
-					</svg>
+				<section class="project-tile--thumbnail insurance-flow-thumbnail">
+					<div class="project-tile__content">
+						<h3 class="project-tile__title">
+							AMA Insurance Billing User Flow
+						</h3>
+						<a class="project-tile__button" target="_blank" href="https://www.behance.net/gallery/49532287/AMA-Insurance-Billing-Flow">
+							View On Behance
+						</a>
+						<svg class="project-tile__arrow" height="100%" preserveAspectRatio="none" viewBox="0 0 30.5 14" width="100%">
+							<path d="M0 14 L20.5 14 L0 0" fill="rgba(51, 51, 51, 0.78)"></path>
+						</svg>
+					</div>
 				</section>
-				<section class="project-tile--thumbnail">
-					<a class="project-tile__button" href="#">
-						View On Behance
-					</a>
-					<svg class="project-tile__arrow" height="100%" preserveAspectRatio="none" viewBox="0 0 30.5 14" width="100%">
-						<path d="M0 14 L20.5 14 L0 0" fill="rgba(66, 35, 76, 0.80)"></path>
-					</svg>
+				<section class="project-tile--thumbnail insurance-overview-thumbnail">
+					<div class="project-tile__content">
+						<h3 class="project-tile__title">
+							AMA Online Account Insurance Overview
+						</h3>
+						<a class="project-tile__button" target="_blank" href="https://www.behance.net/gallery/49532287/AMA-Insurance-Billing-Flow">
+							View On Behance
+						</a>
+						<svg class="project-tile__arrow" height="100%" preserveAspectRatio="none" viewBox="0 0 30.5 14" width="100%">
+							<path d="M0 14 L20.5 14 L0 0" fill="rgba(51, 51, 51, 0.78)"></path>
+						</svg>
+					</div>
 				</section>
 			</div>
 		</section>
-		<section class="pre-footer contact-me">
+		<section class="pre-footer contact-me" id="contact">
 			<h3 class="pre-footer__title">Let's Chat</h3>
 			<a class="rounded-button" href="mailto:kroberrtsonn@gmail.com">Drop me a line</a>
 			<section class="social-icons">

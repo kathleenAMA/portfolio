@@ -1,57 +1,8 @@
-@import "before-after-slider.scss";
+@import "reset.scss";
+@import "variables.scss";
+@import "resume.scss";
+@import "hey-shopify.scss";
 
-$body-font: 'Cabin', sans-serif;
-$display-font: 'Merriweather Sans', sans-serif;
-
-/*colors*/
-$theme-color: #623372;
-$heavylift-grey: #232323;
-$blue-grey: #e1e4ea;
-$almost-ama-blue: #3d88c9;
-
-/*reset*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-.clearfix:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-}
-
-.clearfix {
-    display: inline-block;
-}
-
-html[xmlns] .clearfix {
-    display: block;
-}
-
-* html .clearfix {
-    height: 1%;
-}
 
 html * {
 	transition:all 200ms ease;
@@ -208,8 +159,7 @@ header{
 .home-hero{
   width: 100%;
 	max-width: 1610px;
-	display: block;
-  min-height: calc(100% - 110px);
+	min-height: calc(100% - 110px);
   margin: 0 auto;
   background-image: url(../images/home-hero-bg.jpg);
   background-size: cover;
@@ -317,9 +267,11 @@ header{
 		margin: 20px 1.5%;
 		height: 220px;
 		float: left;
-		padding: 20px;
 		box-sizing: border-box;
 		background: $theme-color;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
 
 		.project-tile__arrow{
 			left: 0;
@@ -336,6 +288,13 @@ header{
 
 		&:nth-of-type(2){
 			margin: 20px 0;
+		}
+
+		.project-tile__content{
+			padding: 20px;
+			width: 100%;
+			height: 100%;
+			background: rgba(51, 51, 51, 0.78);
 		}
 	}
 
@@ -443,6 +402,19 @@ header{
   }
 }
 
+.cronometer-thumbnail{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/da569a49439319.58b503d18c338.png);
+}
+
+.insurance-flow-thumbnail{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/e7730f49532287.58b76109ba685.jpeg);
+}
+
+.insurance-overview-thumbnail{
+	background-position: top center;
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/77425649532461.58b76292ab1dc.png);
+}
+
 .project-hero{
   padding-top: 1px;
   position: relative;
@@ -478,6 +450,15 @@ header{
     }
   }
 
+	&--decath{
+		background-image: url(../images/decath-bg.jpg);
+		margin-bottom: 30px;
+
+		.project-description{
+			background: rgba(27, 122, 132, 0.82);
+		}
+	}
+
   &__mockup{
     background-size: auto 85%;
     background-repeat: no-repeat;
@@ -502,6 +483,11 @@ header{
       @extend .project-hero__mockup;
       background-image: url(../images/notification-slideout.gif);
     }
+
+		&--decath{
+			@extend .project-hero__mockup;
+			background-image: url(../images/decath-hero-bg.png);
+		}
   }
 }
 
@@ -569,6 +555,17 @@ header{
     @extend .content-block;
     background-color: #014683;
   }
+
+	&--darkgrey{
+		@extend .content-block;
+		background-color: #5c5e5e;
+		padding: 30px;
+		box-sizing: border-box;
+
+		p, .content-block__title{
+			color: white;
+		}
+	}
 
   &--backgroundimage{
     @extend .content-block;
@@ -661,6 +658,12 @@ header{
   max-width: 800px;
   float: left;
   margin-left: 2%;
+
+	&--left{
+		@extend .content-image;
+		margin-right: 2%;
+		margin-left: 0;
+	}
 }
 
 .floated-content{
@@ -670,6 +673,25 @@ header{
 	img{
 		width: 90%;
 		margin-left: 6%;
+	}
+}
+
+.thumbnail-row{
+	width: auto;
+	margin: 0 auto;
+	display: block;
+	clear: both;
+
+	&__image{
+		width: 32%;
+		margin-bottom: 10px;
+		display: block;
+		margin: 0 auto;
+		float: left;
+
+		&:nth-of-type(2){
+			margin: 0 2%;
+		}
 	}
 }
 
@@ -753,6 +775,18 @@ header{
 }
 .scrolling-screens--insurance .scrolling-screen__slide:nth-of-type(5){
   	background-image: url(../images/insurance-screen4.png);
+}
+.scrolling-screens--insurance .scrolling-screen__slide:nth-of-type(6){
+  	background-image: url(../images/insurance-screen5.png);
+}
+.scrolling-screens--insurance .scrolling-screen__slide:nth-of-type(7){
+  	background-image: url(../images/insurance-screen6.png);
+}
+.scrolling-screens--insurance .scrolling-screen__slide:nth-of-type(8){
+  	background-image: url(../images/insurance-screen7.png);
+}
+.scrolling-screens--insurance .scrolling-screen__slide:nth-of-type(9){
+  	background-image: url(../images/insurance-screen8.png);
 }
 
 .scrolling-screens--notification .scrolling-screen__slide:nth-of-type(2){
@@ -1032,7 +1066,18 @@ footer{
     width: 100%;
     margin: 0 auto;
     display: block;
+
+		&--left{
+			margin-bottom: 15px;
+		}
   }
+
+	.thumbnail-row__image{
+		width: 95%;
+		float: none;
+		display: block;
+		margin: 0 auto 15px auto;
+	}
 
   .floated-content{
     float: none;
@@ -1222,7 +1267,7 @@ footer{
   }
 
 	.scrolling-screen__slide{
-		height: 260px;
+		height: 235px;
 	}
 
   .scrolling-screens--notification{
