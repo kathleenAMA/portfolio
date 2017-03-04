@@ -1181,13 +1181,14 @@ footer{
   /*mobile nav*/
   .nav-list{
     margin-top: 57px;
+		margin-left: 0;
     height: 0;
     float: none;
     width: 100%;
   }
 
   .nav-list.active{
-    height: 150px;
+    height: 205px;
   }
 
   .nav-list__link{
