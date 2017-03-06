@@ -52,6 +52,11 @@ html[xmlns] .clearfix {
   font-weight: 800;
   letter-spacing: -4px;
   color: #30373b; }
+  .letter__title img {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: block; }
 .letter__container {
   width: 90%;
   max-width: 980px;
@@ -220,7 +225,6 @@ header {
 
 .home-hero {
   width: 100%;
-  max-width: 1610px;
   min-height: calc(100% - 110px);
   margin: 0 auto;
   background-image: url(../images/home-hero-bg.jpg);
