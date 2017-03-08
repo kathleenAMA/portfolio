@@ -1027,7 +1027,9 @@ footer {
     -moz-transform: rotate(-45deg); } }
 @media only screen and (max-width: 450px) {
   .home-hero {
-    padding: 0; }
+    padding: 0;
+    background-attachment: inherit;
+    background-position: center center; }
 
   .home-page {
     padding: 15px; }
