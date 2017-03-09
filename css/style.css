@@ -139,6 +139,17 @@ a:hover {
 header {
   height: 56px; }
 
+.wordmark {
+  height: 52px;
+  display: inline-block;
+  top: 0;
+  float: left;
+  line-height: 52px;
+  margin-left: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 20px; }
+
 .navigation-bar {
   width: 100vw;
   background: white;
@@ -154,7 +165,7 @@ header {
 .nav-list {
   height: 52px;
   background: white;
-  margin: 0 10px 0 60px;
+  margin: 0 0 0 37px;
   padding: 0;
   text-align: center; }
 
@@ -719,7 +730,6 @@ header {
   max-width: 30%;
   height: auto;
   float: left;
-  padding-top: 1px;
   position: relative;
   z-index: 20;
   overflow: hidden; }
@@ -741,6 +751,52 @@ header {
     height: auto;
     margin-top: 0; }
 
+.insurance-mobile-scroll {
+  -webkit-animation: mobile-scroll 14s infinite;
+  /* Safari 4+ */
+  -moz-animation: mobile-scroll 14s infinite;
+  /* Fx 5+ */
+  -o-animation: mobile-scroll 14s infinite;
+  /* Opera 12+ */
+  animation: mobile-scroll 14s infinite;
+  /* IE 10+, Fx 29+ */ }
+
+@-webkit-keyframes mobile-scroll {
+  0% {
+    top: 0; }
+  50% {
+    top: -51%; }
+  55% {
+    top: -51%; }
+  95% {
+    top: 0; } }
+@-moz-keyframes mobile-scroll {
+  0% {
+    top: 0; }
+  50% {
+    top: -51%; }
+  55% {
+    top: -51%; }
+  95% {
+    top: 0; } }
+@-o-keyframes mobile-scroll {
+  0% {
+    top: 0; }
+  50% {
+    top: -51%; }
+  55% {
+    top: -51%; }
+  95% {
+    top: 0; } }
+@keyframes mobile-scroll {
+  0% {
+    top: 0; }
+  50% {
+    top: -51%; }
+  55% {
+    top: -51%; }
+  95% {
+    top: 0; } }
 .process {
   margin-top: 20px;
   position: relative; }
@@ -969,7 +1025,7 @@ footer {
 
   /*mobile nav*/
   .nav-list {
-    margin-top: 57px;
+    margin-top: 0;
     margin-left: 0;
     height: 0;
     float: none;
